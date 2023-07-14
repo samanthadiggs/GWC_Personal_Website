@@ -17,3 +17,24 @@ body {
    #hero {
     display: flex;
    }
+
+   #introRight {
+    background-color: darkslateblue;
+   }
+
+   .introRightText {
+    color: white;
+   }
+
+   #navBar {
+    display:flex;
+    flex-direction: row;
+   }
+
+   .sociaLink {
+    width: 5%;
+   }
+
+   .buttonContainer {
+    display:flex;
+   }
