@@ -7,33 +7,71 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	  <!-- link the webpage's stylesheet -->
-	  <link rel="stylesheet" href="/style.css" />
+	  <link rel="stylesheet" href="style.css" />
+    <!-- link to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 	  <!-- link the webpage's JavaScript file -->
-	  <script src="/script.js" defer></script>
+	  <script src="script.js" defer></script>
 
   </head>
   
   <body>
     <nav id="navBar">
-                <a href= "about.html" class="navLink">About</a>
-                <a href= "portfolio.html" class="navLink">Projects</a>
+      <h1 class="navLink" id="navHeader">Samantha Diggs</h1>
+      <a href= "about.html" class="navLink">About</a>
+      <a href= "portfolio.html" class="navLink">Projects</a>
     </nav>
     <div id="hero">
-    <div class="introLeft">
-      <h1>Samantha Diggs</h1>
-      <p>Innovative thinker, forever learner, aspiring software engineer</p>
-        <div id="buttonContainer">
-           <a href="https://www.linkedin.com/in/samanthadiggs"><img class="socialLink" src="assets/linkedin.png" alt="Linkedin"> </a>
-         <a href="https://github.com/samanthadiggs"><img class="socialLink"src="assets/github.png" alt="Github"> </a>
+      <div class="introLeft">
+        <h1 id="pageHeading">Samantha Diggs</h1>
+        <p>Innovative thinker, <b> forever</b> learner, aspiring software engineer</p>
+          <div id="buttonContainer">
+            <a href="https://www.linkedin.com/in/samanthadiggs"><img class="socialLink" src="assets/linkedin.png" alt="Linkedin"> </a>
+            <a href="https://github.com/samanthadiggs"><img class="socialLink"src="assets/github.png" alt="Github"> </a>
+          </div>
+        <p>Information Technology Student Class of 2025</p>
+        <p>Scroll Down <span> <img src=""> </span>
+      </div>
+      <div id="introRight">
+          <img id="myImage" src="assets/avatar.jpeg" alt="Photo of me!">
+          <p class="introRightText">Hello! My name is Samantha! I am a rising junior passionate about all things engineering and design. I love to learn new things!</p>
+          <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+          <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
       </div>
     </div>
-    <div id="introRight">
-        <img src="assets/avatar.jpeg" alt="Photo of me!">
-        <p class="introRightText">Hello! My name is Samantha! I am a rising junior passionate about all things engineering and design. I love to learn new things!</p>
-        <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+    <section id="technical" class="reveal">
+      <h1> Information Technology '25 Technical Gallery</h1>
+      <div id="technicalGallery">
+
+      </div>
+
+    </section>
+    <section id="skillSection" class="reveal">
+    <h1 id="skillsHeader">My Toolbox</h1>
+    <div id="mySkills">
+        <div class="skill">
+          <h2 class="skillName">HTML</h2>
+          <h2 class="skillNumber">65%</h2>
+        </div>
+        <div class="skill">
+          <h2 class="skillName">CSS</h2>
+          <h2 class="skillNumber">35%</h2>
+        </div>
+        <div class="skill">
+          <h2 class="skillName">Javascript</h2>
+          <h2 class="skillNumber">20%</h2>
+        </div>
+        <div class="skill">
+          <h2 class="skillName">Python</h2>
+          <h2 class="skillNumber">75%</h2>
+        </div>
     </div>
-</div>
+  </section>
   </body>
 </html>

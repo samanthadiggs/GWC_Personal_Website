@@ -1,40 +1,137 @@
 /* STYLE SECTIONING TAGS */
 body {
     background-color: white; 
+    font-family: 'Nunito', sans-serif;
    }
    
    /* STYLE TEXT */
    
    h1 {
      color: navy;
+     font-family: 'Cormorant Garamond', serif;
+   }
+
+   h2 {
+    font-family: 'Cormorant Garamond', serif;
    }
    
    /* STYLE IMAGES */
    
    /* STYLE NAV BAR */
 
-
-   #hero {
-    display: flex;
-   }
-
-   #introRight {
-    background-color: darkslateblue;
-   }
-
-   .introRightText {
-    color: white;
-   }
-
    #navBar {
     display:flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
    }
 
-   .sociaLink {
-    width: 5%;
+   #navHeader {
+    justify-self: start;
+    font-size:1.8rem;
    }
 
-   .buttonContainer {
+   .navLink {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+   }
+
+
+   #hero {
+    display: flex;
+    padding:5%;
+    justify-content: space-between;
+    gap:35px
+   }
+
+   
+   .introRightText {
+    color: black;
+   }
+
+
+   .introLeft{
+
+    padding-top:7%;
+
+   }
+
+  
+
+   .socialLink {
+    width: 30%;
+    padding:2%;
+   }
+
+   .socialLink:hover {
+    width:35%;
+    transition-timing-function: ease-in-out;
+
+   }
+
+
+   #buttonContainer {
     display:flex;
+    justify-content: start;
+   }
+
+
+   #pageHeading {
+    font-size: 4rem;
+   }
+
+   #introRight {
+    width:100%;
+   }
+   #myImage {
+    width:85%;
+   }
+
+   #mySkills {
+    padding:5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4em;
+   }
+
+   .skill {
+    background-color:lightgray;
+    border-radius: 20%;
+    width:350%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:3%;
+    align-content:center;
+
+   }
+
+   .skillName {
+    font-size:2em;
+    align-self: center;
+   }
+
+   .skillNumber {
+    align-self:center;
+    font-size:2rem;
+   }
+
+
+   #skillsHeader {
+    text-align: center;
+    padding-top:4%;
+   }
+
+
+   .reveal {
+    position:relative;
+    transform:translateY(150px);
+    opacity:0;
+    transition: 2s all easse;
+   }
+
+   .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
    }
