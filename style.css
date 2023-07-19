@@ -44,12 +44,6 @@ body {
     gap:35px
    }
 
-   
-   .introRightText {
-    color: black;
-   }
-
-
    .introLeft{
 
     padding-top:7%;
@@ -65,7 +59,7 @@ body {
 
    .socialLink:hover {
     width:35%;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: 3s ease-in-out;
 
    }
 
@@ -79,14 +73,29 @@ body {
    #pageHeading {
     font-size: 4rem;
    }
-
+/* intro Right Styling */
    #introRight {
     width:100%;
-   }
-   #myImage {
-    width:65%;
+    align-items:center;
+    justify-content:center;
    }
 
+   #myImage {
+    width:50%;
+    justify-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+   }
+
+   .introRightText {
+    color: black;
+    text-align: left;
+    text-align-last: left;
+    text-indent:20px;
+    font-size: 1.4rem;
+   }
+
+/* Skills section styling*/
    #mySkills {
     padding:5%;
     display: flex;
@@ -98,7 +107,7 @@ body {
    .skill {
     background-color:lightgray;
     border-radius: 20%;
-    width:350%;
+    width:25%;
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -124,6 +133,8 @@ body {
    }
 
 
+   /* page transitions */
+
    .reveal {
     position:relative;
     transform:translateY(150px);
@@ -134,4 +145,26 @@ body {
    .reveal.active {
     transform: translateY(0);
     opacity: 1;
+   }
+
+   .reveal2 {
+    position:relative;
+    transform:translateX(-150px);
+    opacity:0;
+    transition: 5s all ease;
+   }
+
+   .reveal2.active {
+    transform: translateY(0);
+    opacity: 1;
+   }
+
+
+   .reveal3 {
+      opacity: 0;
+      transition: opacity 5s;
+   }
+
+   .reveal3.active {
+    opacity:1;
    }
